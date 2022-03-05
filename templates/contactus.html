@@ -1,0 +1,20 @@
+{% extends 'layout.html' %}
+{% block head %}
+<title> Trashin Place - Contactanos </title>
+{% endblock %}
+{% block body %}
+<center>
+    <form id="form" class="form" autocomplete="off">
+        <h3>¡Contactanos!</h3>
+        <label for="name">Nombre <span>*</span></label>
+        <input name="name" type="text" id="name" placeholder="Alex" required>
+        <label for="email">Correo electrónico <span>*</span></label>
+        <input name="email" type="text" id="email" placeholder="example@gmail.com" required>
+        <label for="message">Mensaje</label>
+        <textarea id="message" name="message"></textarea>
+        <button type="submit" class="btn btn-success">Enviar mensaje</button>
+    </form>
+    <a href="mailto:me@trashinplace.business@gmail.com" id="mailto"></a>
+</center>
+<script src="{{ url_for('static', filename='js/mailto.js') }}"></script>
+{% endblock %}

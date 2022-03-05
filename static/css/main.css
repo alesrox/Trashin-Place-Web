@@ -1,0 +1,143 @@
+/* General css */
+.justify-text {
+    text-align: justify;
+    text-justify: auto;
+}
+
+.separator {
+    width: 80%;
+    background-color: #000;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+.about-text {
+    font-size: 18px;
+    margin: 25px 75px;
+}
+
+.us-text {
+    transform: translate(-5%, 0%);
+}
+
+li {
+    margin: 15px 0;
+}
+
+.img-ods-tp {
+    margin: 30px 0 0 0;
+}
+
+.ph-img {
+    width: 100%;
+    height: auto;
+}
+
+/* footer css */
+footer.bg-dark {
+    color: var(--main-color-text);
+}
+
+.subfooter {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.footer-links {
+    margin: 0 15px;
+}
+
+.white-text {
+    color: rgb(200, 200, 200);
+}
+
+.white-text:hover {
+    color: rgb(200, 200, 200);
+}
+
+.fa {
+    font-size: 40px;
+    margin: 5px;
+    color: var(--icon-color);
+}
+
+.fa:hover {
+    font-size: 45px;
+    margin: 0 2.65px;
+    color: var(--icon-color);
+}
+
+.p-footer span {
+    color: #2a9a36;
+}
+
+/* inta widget footer */
+.insta-widget-container {
+    margin: 20px;
+}
+
+.snapwidget-widget {
+    width: 80%;
+    border: none;
+    overflow: hidden;
+}
+
+/* Contac us form css */
+.form h3, .form label, .form button {
+    display: block;
+    margin: 10px;
+}
+
+.form input {
+    display: block;
+    margin: 5px;
+    width: 500px;
+    height: auto;
+}
+
+.form textarea {
+    resize: none;
+    display: block;
+    margin: 10px;
+    width: 600px;
+    height: 351px;
+}
+
+.form label span {
+    color: rgb(211, 76, 76);
+}
+
+/* Mobile size */
+@media only screen and (max-width: 700px) {
+    .btn {
+        margin: 0 0 20px 0;
+    }
+
+    .about-text {
+        font-size: 14px;
+        margin: 25px 25px;
+    }
+
+    .us-text {
+        transform: translate(0%, 0%);
+    }
+
+    .img-ods {
+        margin: 25px 0 0 0;
+    }
+
+    .form input {
+        width: 80%;
+    }
+
+    .form textarea {
+        width: 85%;
+        height: 250px;
+    }
+}
+
+@media only screen and (max-width: 579px) {
+    .ph-img {
+        width: 70%;
+        height: auto;
+    }
+}

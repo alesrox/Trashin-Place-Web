@@ -1,0 +1,42 @@
+{% extends 'layout.html' %}
+{% block head %}
+<title>Trashin Place - Home</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+{% endblock %}
+{% block body %}
+<center>
+    <img src="{{ url_for('static', filename='img/banner-fixed.png') }}" alt="Gestión y tratamiento de residuos" class="banner" width="100%">
+    <hr class="separator">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-8 my-auto">
+                <p id="text-lg" class="text justify-text">
+                    Estamos encantados de poder presentar nuestro proyecto:
+                    <br id="responsive-title"><span class="TrashinPlace"><b>Trashin <span style="color: green">Place</span></b></span>
+                    <br> ¡Tenemos un problema! Hay una gran acumulación de basura en las calles y vías públicas, o directamente estan desatendidas.<br>
+                    <b>¿Nuestra solución?</b> Una aplicación móvil en desarrollo, para la <b>gestión y tratamiento de residuos</b>, dónde publicar fotos y reseñas de
+                    las zonas públicas para crear conciencia y que genere una retroalimentación para que esten más limpias y atendidadas, y asi
+                    mismo ayuden al medio ambiente.
+                </p>
+                <p id="text-sm" class="justify-text">
+                    ¡Os presentamos <span class="TrashinPlace"><b>Trashin <span style="color: green">Place</span></b></span>!
+                    <br><b>¡Tenemos un problema!</b> Hay mucha basura en las calles.<br>
+                    <b>¿Nuestra solución?</b> Una aplicación en desarrollo, para la <b>gestión y tratamiento de residuos</b>,
+                    donde publicar fotos y reseñas de las zonas públicas para crear conciencia además de
+                    conseguir que los ayuntamientos les den mayor mantenimiento y cuidado.
+                </p>
+                <br>
+                <button id="btn-app" class="btn btn-success" onclick="warning()" data="Próxmimamente">
+                    Descarga la App
+                </button>
+            </div>
+            <div class="col-sm-6 col-md-4 img_app">
+                <img src="{{ url_for('static', filename='img/mobile_app.png')}}" alt="Trashin Place App - Gestión y tratamiento de residuos" width="60%" height="auto">
+            </div>
+        </div>
+    </div>
+</center>
+<div style="margin: 15px;"></div>
+<!-- App Ad -->
+<script type="text/javascript" src="{{ url_for('static', filename='js/app.js') }}"></script>
+{% endblock %}

@@ -1,0 +1,83 @@
+{% extends 'layout.html' %}
+{% block head %}
+<title>Trashin Place - ODS</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/ods.css') }}">
+{% endblock %}
+{% block body %}
+<center>
+    <h2>Objetivos de Desarrollo Sostenible</h2>
+    <hr class="separator">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-7 my-auto">
+                <p class="text justify-text">
+                    Los ODS (<b>O</b>bjetivos de <b>D</b>esarrollo <b>S</b>ostenible) se tratan de <b>17 objetivos</b> que sirven <b>para
+                    solventar</b> las <b>principales problemáticas mundiales</b> actuales, desde la pobreza y la desigualdad hasta el
+                    cambio climático, básicamente son el mapa de trabajo para conseguir un mundo y futuro sostenible para todos.
+                </p>
+                <br>
+                <a class="btn btn-success" href="https://www.agenda2030.gob.es/objetivos/home.htm" target="_blank" rel="noopener noreferrer">
+                    Más información
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-5 img-ods">
+                <img src="{{ url_for('static', filename='img/ODS/ODS-circle.png')}}" width="60%" height="auto">
+            </div>
+        </div>
+    </div>
+    <h2 style="margin-top: 30px;">¿Cuales cumplimos?</h2>
+    <hr class="separator">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-5 img-ods-tp">
+                <img src="{{ url_for('static', filename='img/ODS/ODS-TP.png')}}" width="80%" height="auto">
+            </div>
+            <div class="col-sm-12 col-md-7 my-auto">
+                <ul class="text justify-text ods-text">
+                    <li>
+                        <b><u>Salud y bienestar:</u></b>
+                        Nuestro proyecto <b>contribuye</b> a la <b>salud de la población</b>. La contaminación es causante de varias enfermedades y de infecciones.
+                        Si conseguimos <b>nuestro propósito, un área más limpia</b>, mejoraremos también el <b>bienestar de los ciudadanos</b>.
+                    </li>
+                    <li>
+                        <b><u>Crecimiento económico:</u></b>
+                        Trashin Place <b>promueve</b> de cierto modo <b>el crecimiento económico</b>, basándonos principalmente en el <b>turismo</b>. La gente tendrá
+                        tendencia a visitar los lugares con mejores valoraciones.
+                    </li>
+                    <li>
+                        <b><u>Ciudades y comunidades sostenibles:</u></b>
+                        Nosotros colaboramos en este <b>objetivo</b> consiguiendo <b>ciudades más limpias</b>, para que la población pueda transitar de forma cómoda y segura.
+                    </li>
+                    <li>
+                        <b><u>Acción por el clima:</u></b>
+                        La contaminación no solo contribuye al <b>cambio climático</b>, es más, lo acelera. Los residuos sólidos liberan centenares de GEI y CO2 a la atmósfera.
+                        <b>Nosotros luchamos contra esto</b>.
+                    </li>
+                    <li>
+                        <b><u>Vida de ecosistemas terrestres:</u></b>
+                        Buscamos <b>mantener el planeta limpio</b>, nuestra casa común y la de todas las especies. <b>Mejorando</b> así <b>la calidad de vida de todos</b> los seres vivos.
+                    </li>
+                    <li>
+                        <b><u>Alianza para lograr los objetivos:</u></b>
+                        Para conseguir una ciudad con mejor cuidado necesitamos <b>poner cada uno nuestro granito de arena</b>. El motor de nuestra app es la
+                        unión de toda la <b>población dispuesta a contribuir y mejorar nuestro ambiente</b>.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <h2>Huella de Carbono</h3>
+    <hr class="separator">
+</center>
+<section class="huella-carbono">
+    <center>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-12">
+                    <img class="img-ods" src="{{ url_for('static', filename='img/huella_de_carbono.png')}}" >
+                </div>
+            </div>
+        </div>
+    </center>
+</section>
+{% endblock %}

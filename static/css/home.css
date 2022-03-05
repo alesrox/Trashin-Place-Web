@@ -1,0 +1,52 @@
+.text {
+    margin: 5px 50px;
+}
+
+.TrashinPlace {
+    border: 2px solid #000;
+    padding: 3px;
+}
+
+.btn {
+    margin: 5px;
+}
+
+.img_app {
+    transform: translate(-25%, 0);
+}
+
+.skill[data]:hover:after {
+    content: attr(data);
+    padding: 4px 8px;
+    margin-top: -12px;
+    color: rgba(255,255,255,1);
+    left: 45%;
+    transform: translate(-22.5%);
+    position: absolute;
+    display: block;
+    top: 0%;
+    white-space: nowrap;
+    z-index: 2;
+    border-radius: 5px;
+    background: rgba(0,0,0,0.5);
+}
+
+@media only screen and (max-width: 700px) {
+    .text {
+        margin: 5px 40px;
+    }
+
+    .skill {
+        position: relative;
+        width: 50%;
+        height: 50%;
+        height: auto;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .img_app {
+        transform: translate(0, 0);
+    }
+
+}

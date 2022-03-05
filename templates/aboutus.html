@@ -1,0 +1,82 @@
+{% extends 'layout.html' %}
+{% block head %}
+<title>Trashin Place - About Us</title>
+{% endblock %}
+{% block body %}
+<center>
+    <img src="{{ url_for('static', filename='img/work-banner.png') }}" alt="Trashin Place Team" class="banner" width="70%">
+    <div class="col-md-12">
+        <hr class="separator">
+    </div>
+    <div class="container" style="margin: 25px 0;">
+        <p class="justify-text">
+            Somos un grupo de jóvenes que queremos <b>cambiar el mundo</b> en base a la contaminación, <b>Reduciendo, Reutilizando y Reciclando.</b>
+            Vosotros nos podéis ayudar <b>descargando la App</b> y <b>compartiendo incidentes</b> de la vía pública para ayudar a los ayuntamientos a cambiarlo.
+        </p>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4 col-md-2">
+                <img src="{{ url_for('static', filename='img/alex.png')}}" alt="Alejandro Ros - Trashin Place" class="ph-img">
+                <br><h6><b>Alejandro Ros</b></h6>
+            </div>
+            <div class="col-sm-8 col-md-4 justify-text us-text">
+                <ul>
+                    <li>Alumno de 1º Bachillerato</li>
+                    <li>Natural de <b>Alicante</b></li>
+                    <li>CEO de <b>Trashin <span style="color: green">Place</span></b></li>
+                    <li><b>Aficiones</b>: Programación</li>
+                    <li>Formo parte del equipo, por una ciudad y mundo mejor cuidado.</li>
+                </ul>
+                <a href="https://github.com/alesrox" target="_blank" rel="noopener noreferrer" class="fa fa-github" style="color: black;"></a>
+                <a href="https://twitter.com/alesrox" target="_blank" rel="noopener noreferrer" class="fa fa-twitter" style="color: black;"></a>
+                <a href="https://www.instagram.com/aleesrox/" target="_blank" rel="noopener noreferrer" class="fa fa-instagram" style="color: black;"></a>
+            </div>
+            <div class="col-sm-4 col-md-2">
+                <img src="{{ url_for('static', filename='img/marta.png')}}" alt="Marta Manrique - Trashin Place" class="ph-img">
+                <br><h6><b>Marta Manrique</b></h6>
+            </div>
+            <div class="col-sm-8 col-md-4 justify-text">
+                <ul>
+                    <li>Alumna de 1º Bachillerato</li>
+                    <li>Natural de <b>Alicante</b></li>
+                    <li>Directora de Marketing y RR.HH.</li>
+                    <li><b>Aficiones</b>: Gimnasia rítmica</li>
+                    <li>Soy parte de este grupo, porque es más facil cambiar el mundo en equipo.</li>
+                </ul>
+                <a href="https://www.instagram.com/marta.maanrique/" target="_blank" rel="noopener noreferrer" class="fa fa-instagram" style="color: black;"></a>
+            </div>
+            <div style="width: 100%; height: 25px;"></div>
+            <div class="col-sm-4 col-md-2">
+                <img src="{{ url_for('static', filename='img/rogelio.png')}}" alt="Rogelio Pardo - Trashin Place" class="ph-img">
+                <br><h6><b>Rogelio Pardo</b></h6>
+            </div>
+            <div class="col-sm-8 col-md-4 justify-text us-text">
+                <ul>
+                    <li>Alumno de 1º Bachillerato</li>
+                    <li>Natural de <b>Alicante</b></li>
+                    <li>Director de Control de Calidad y ODS</li>
+                    <li><b>Aficiones</b>: Fútbol americano</li>
+                    <li>Formo parte de este equipo, porque quiero cambiar el mundo.</li>
+                </ul>
+                <a href="https://twitter.com/rogstar_38" target="_blank" rel="noopener noreferrer" class="fa fa-twitter" style="color: black;"></a>
+                <a href="https://www.instagram.com/roge.paardo/" target="_blank" rel="noopener noreferrer" class="fa fa-instagram" style="color: black;"></a>
+            </div>
+            <div class="col-sm-4 col-md-2">
+                <img src="{{ url_for('static', filename='img/santi.png')}}" alt="Santiago Martin - Trashin Place" class="ph-img">
+                <br><h6><b>Santiago Martin</b></h6>
+            </div>
+            <div class="col-sm-8 col-md-4 justify-text">
+                <ul>
+                    <li>Alumno de 1º Bachillerato</li>
+                    <li>Natural de <b>Alicante</b></li>
+                    <li>Director de Economía, Finanzias y Gestión</li>
+                    <li><b>Aficiones</b>: Golf</li>
+                    <li>Soy parte de este grupo, porque quiero un mundo mejor para las generaciones futuras.</li>
+                </ul>
+            </div>
+            <div style="width: 100%; height: 15px;"></div>
+        </div>
+    </div>
+</center>
+{% endblock %}
